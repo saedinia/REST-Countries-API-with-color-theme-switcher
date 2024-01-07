@@ -31,8 +31,9 @@ body {
       color: var(--clr-white-dark);
     }
 
-    .main-container {
-      max-width: rem(1440);
+    .wrapper {
+      max-width: rem(1100);
+      margin: auto;
     }
   }
 }
