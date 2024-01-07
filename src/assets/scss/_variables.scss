@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+:root {
+  --ff-sans: 'Nunito Sans', sans-serif;
+
+  --fw-300: 300;
+  --fw-600: 600;
+  --fw-800: 800;
+
+  --fs-400: rem(14);
+  --fs-500: rem(16);
+
+  // Color dark mode
+  --clr-dark-blue-dark: hsl(209, 23%, 22%); // Dark Mode Elements)
+  --clr-very-dark-blue-dark: hsl(207, 26%, 17%); // Dark Mode Background
+  --clr-white-dark: hsl(0, 0%, 100%); // Dark Mode Text & Light Mode Elements
+
+  // Color light mode
+  --clr-very-dark-blue-light: hsl(200, 15%, 8%); // Light Mode Text
+  --clr-dark-gray-light: hsl(0, 0%, 52%); // Light Mode Input
+  --clr-very-light-gray-light: hsl(0, 0%, 98%); // Light Mode Background
+}

@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+svg,
+picture {
+  display: block;
+  max-width: 100;
+}
+
+body {
+  font-family: var(--ff-sans);
+
+  .body-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &.light-mode {
+      background: var(--clr-very-light-gray-light);
+      color: var(--clr-very-dark-blue-light);
+    }
+
+    &.dark-mode {
+      background: var(--clr-very-dark-blue-dark);
+      color: var(--clr-white-dark);
+    }
+
+    .main-container {
+      max-width: rem(1440);
+    }
+  }
+}
