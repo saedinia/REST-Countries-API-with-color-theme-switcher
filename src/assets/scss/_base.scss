@@ -13,22 +13,55 @@ picture {
   max-width: 100;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 body {
   font-family: var(--ff-sans);
 
   .body-inner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    .form-group {
+      border-radius: 0.5rem;
+      padding: 1rem 1.5rem;
+      display: flex;
+      gap: 1rem;
+
+      input,
+      select {
+        outline: none;
+        border: none;
+        background: inherit;
+        color: inherit;
+        width: 100%;
+
+        &::placeholder {
+          color: inherit;
+        }
+      }
+    }
 
     &.light-mode {
       background: var(--clr-very-light-gray-light);
       color: var(--clr-very-dark-blue-light);
+
+      .form-group {
+        background: var(--clr-white);
+        box-shadow: 0px 1px 5px -3px var(--clr-black);
+        color: var(--clr-dark-gray-light);
+      }
     }
 
     &.dark-mode {
       background: var(--clr-very-dark-blue-dark);
-      color: var(--clr-white-dark);
+      color: var(--clr-white);
+
+      .form-group {
+        background: var(--clr-dark-blue-dark);
+        box-shadow: 0px 1px 5px -3px var(--clr-black);
+        color: var(--clr-white);
+      }
     }
 
     .main-container {
@@ -37,7 +70,7 @@ body {
     }
 
     .wrapper {
-      max-width: rem(1100);
+      max-width: rem(1280);
       margin: auto;
       padding-inline: 1rem;
     }

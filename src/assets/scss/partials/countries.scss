@@ -4,18 +4,18 @@ body {
       .home-page {
         .country-items {
           display: grid;
-          gap: 1.5rem;
+          gap: 4rem;
           margin-block: 1.5rem;
           padding-inline: 1.5rem;
 
           .item {
-            background: white;
-            border-radius: 1rem;
+            border-radius: 0.5rem;
             display: grid;
             gap: 0.5rem;
             overflow: hidden;
-            box-shadow: 0 0 2px black;
+            box-shadow: 0 0 3px 0 rgba(0 0 0 / 0.5);
             grid-auto-rows: 1fr;
+            cursor: pointer;
 
             .country-image {
               img {
@@ -28,7 +28,7 @@ body {
             .country-info {
               padding: 1.5rem;
 
-              h2 {
+              h3 {
                 margin-block-end: 1rem;
               }
 
