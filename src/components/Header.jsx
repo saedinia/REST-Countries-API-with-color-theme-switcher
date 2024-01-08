@@ -1,8 +1,6 @@
 import React from 'react';
 
-function Header(props) {
-  const { theme, onSetTheme } = props;
-
+function Header({ theme, onSetTheme }) {
   const handleThemeMode = () => {
     theme === 'Light' ? onSetTheme('Dark') : onSetTheme('Light');
   };
@@ -15,9 +13,9 @@ function Header(props) {
         </div>
         <div className="theme-mode" onClick={() => handleThemeMode()}>
           {theme === 'Light' ? (
-            <i class="fa-regular fa-moon"></i>
+            <i className="fa-regular fa-moon"></i>
           ) : (
-            <i class="fa-solid fa-moon"></i>
+            <i className="fa-solid fa-moon"></i>
           )}
 
           <span>{theme} Mode</span>

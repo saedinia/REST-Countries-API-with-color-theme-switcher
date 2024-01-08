@@ -1,0 +1,47 @@
+body {
+  .body-inner {
+    .main-container {
+      .filter-section {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        .form-group {
+          background: white;
+          box-shadow: 0px 1px 5px -3px black;
+          border-radius: 0.5rem;
+          padding: 1rem 1.5rem;
+          color: var(--clr-dark-gray-light);
+          display: flex;
+          gap: 1rem;
+
+          input[type='text'],
+          select {
+            outline: none;
+            border: none;
+            background: transparent;
+            color: var(--clr-dark-gray-light);
+            min-width: rem(300);
+          }
+
+          select {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  body {
+    .body-inner {
+      .main-container {
+        .filter-section {
+          justify-content: space-between;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}

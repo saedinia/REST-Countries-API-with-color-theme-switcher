@@ -31,9 +31,23 @@ body {
       color: var(--clr-white-dark);
     }
 
+    .main-container {
+      display: grid;
+      gap: 1.5rem;
+    }
+
     .wrapper {
       max-width: rem(1100);
       margin: auto;
+      padding-inline: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  body {
+    .wrapper {
+      padding-inline: 0;
     }
   }
 }

@@ -1,0 +1,63 @@
+body {
+  .body-inner {
+    .main-container {
+      .home-page {
+        .country-items {
+          display: grid;
+          gap: 1.5rem;
+          margin-block: 1.5rem;
+          padding-inline: 1.5rem;
+
+          .item {
+            background: white;
+            border-radius: 1rem;
+            display: grid;
+            gap: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 0 2px black;
+            grid-auto-rows: 1fr;
+
+            .country-image {
+              img {
+                width: 100%;
+                height: rem(150);
+                object-fit: cover;
+              }
+            }
+
+            .country-info {
+              padding: 1.5rem;
+
+              h2 {
+                margin-block-end: 1rem;
+              }
+
+              div {
+                font-weight: var(--fw-800);
+
+                span {
+                  font-weight: var(--fw-300);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  body {
+    .body-inner {
+      .main-container {
+        .home-page {
+          .country-items {
+            grid-template-columns: repeat(4, 1fr);
+            padding-inline: 0;
+          }
+        }
+      }
+    }
+  }
+}
