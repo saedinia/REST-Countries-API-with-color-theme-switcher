@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Detail from './pages/Detail';
@@ -9,6 +9,7 @@ function App() {
   const onSetTheme = (value) => {
     setTheme(value);
   };
+
   return (
     <div className={`body-inner ${theme.toLowerCase()}-mode`}>
       <div className="main-container">

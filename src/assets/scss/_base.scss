@@ -16,12 +16,28 @@ picture {
 a {
   color: inherit;
   text-decoration: none;
+
+  i {
+    margin-inline-end: 0.5rem;
+  }
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--clr-very-light-gray-light);
+  color: var(--clr-very-dark-blue-light);
+  padding: 0.5rem 1.5rem;
 }
 
 body {
   font-family: var(--ff-sans);
 
   .body-inner {
+    min-height: 100vh;
+
     .form-group {
       border-radius: 0.5rem;
       padding: 1rem 1.5rem;
@@ -51,16 +67,32 @@ body {
         box-shadow: 0px 1px 5px -3px var(--clr-black);
         color: var(--clr-dark-gray-light);
       }
+
+      .btn {
+        background: var(--clr-very-light-gray-light);
+        color: var(--clr-very-dark-blue-light);
+        box-shadow: 0px 1px 5px -3px var(--clr-black);
+      }
     }
 
     &.dark-mode {
       background: var(--clr-very-dark-blue-dark);
       color: var(--clr-white);
 
+      header {
+        background: var(--clr-dark-blue-dark);
+      }
+
       .form-group {
         background: var(--clr-dark-blue-dark);
-        box-shadow: 0px 1px 5px -3px var(--clr-black);
+        box-shadow: 0px 1px 5px -3px var(--clr-white);
         color: var(--clr-white);
+      }
+
+      .btn {
+        background: var(--clr-very-dark-blue-dark);
+        color: var(--clr-white);
+        box-shadow: 0px 1px 5px -3px var(--clr-white);
       }
     }
 

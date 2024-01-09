@@ -4,19 +4,4 @@
 @import 'partials/header';
 @import 'partials/filter';
 @import 'partials/countries';
-
-body {
-  .body-inner {
-    .main-container {
-    }
-  }
-}
-
-@media screen and (min-width: 760px) {
-  body {
-    .body-inner {
-      .main-container {
-      }
-    }
-  }
-}
+@import 'partials/detail';

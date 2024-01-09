@@ -5,11 +5,11 @@ function Filter({ onChange }) {
   const [region, setRegion] = useState(0);
 
   const options = [
-    { value: 'africa', label: 'Africa' },
-    { value: 'america', label: 'America' },
-    { value: 'asia', label: 'Asia' },
-    { value: 'europe', label: 'Europe' },
-    { value: 'oceania', label: 'Oceania' },
+    { value: 'Africa', label: 'Africa' },
+    { value: 'Americas', label: 'Americas' },
+    { value: 'Asia', label: 'Asia' },
+    { value: 'Europe', label: 'Europe' },
+    { value: 'Oceania', label: 'Oceania' },
   ];
 
   useEffect(() => {
