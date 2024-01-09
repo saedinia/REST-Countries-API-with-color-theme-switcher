@@ -17,7 +17,8 @@ function Home() {
   countriesMatchingCriteria = data.filter((country) => {
     if (
       (filterValue &&
-        country.name.toLowerCase().indexOf(filterValue.toLowerCase()) === -1) ||
+        country.name.toLowerCase().indexOf(filterValue.trim().toLowerCase()) ===
+          -1) ||
       (region && country.region !== region)
     ) {
       return false;

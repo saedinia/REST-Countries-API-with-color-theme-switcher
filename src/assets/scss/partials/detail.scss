@@ -44,6 +44,10 @@ body {
               display: flex;
               flex-wrap: wrap;
               gap: 1rem;
+
+              .btn {
+                font-weight: var(--fw-600);
+              }
             }
           }
         }
